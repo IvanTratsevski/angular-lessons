@@ -1,0 +1,18 @@
+<form action="">
+  <h2>Add an article</h2>
+  <fieldset>
+    <label for="title" class="title">Enter a title</label>
+    <input type="text" #title />
+  </fieldset>
+  <fieldset>
+    <label for="link" class="link">Enter a link</label>
+    <input type="link" #link />
+  </fieldset>
+  <button type="submit" (click)="addArticle(title, link)">Add</button>
+</form>
+<h2>Articles rating</h2>
+<ul>
+  <li *ngFor="let article of sortedArticles()">
+    <app-article [article]="article"></app-article>
+  </li>
+</ul>

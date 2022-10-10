@@ -1,0 +1,13 @@
+fieldset {
+  border: none;
+  width: 600px;
+}
+input {
+  border-radius: 8.5%;
+}
+.title {
+  margin: 12px;
+}
+.link {
+  margin: 12px;
+}
